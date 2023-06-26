@@ -1,0 +1,14 @@
+extends layout 
+//- ^ More HTML is sitting in Layout
+
+block content
+
+  h1= title
+  h2= subtitle
+  p Welcome to #{title}
+  //- No equal side it will show the text
+  p= description
+  //- equal sign it will look for this variable
+  a(href=link)= linkText 
+
+//- ^ Block Content is h1 and p 
